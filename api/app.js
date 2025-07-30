@@ -4,6 +4,9 @@ import userRoute from "./routes/user.route.js";
 import authRoute from "./routes/auth.route.js";
 import postRoute from "./routes/post.route.js";
 
+import dotenv from "dotenv";
+dotenv.config({ path: './.env' });
+
 const app = express();
 
 app.use(express.json());
